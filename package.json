@@ -1,6 +1,6 @@
 {
   "name": "ladder-sass",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Ladder is a simple Sass mixin & utility library",
   "main": "index.js",
   "scripts": {
