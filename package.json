@@ -1,0 +1,27 @@
+{
+  "name": "ladder-sass",
+  "version": "1.0.0",
+  "description": "Ladder is a simple Sass mixin & utility library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhrabiee/ladder-sass.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "mixin",
+    "sass-library",
+    "utility",
+    "css"
+  ],
+  "author": "Mohammad Hossein Rabiee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhrabiee/ladder-sass/issues"
+  },
+  "homepage": "https://github.com/mhrabiee/ladder-sass#readme"
+}
