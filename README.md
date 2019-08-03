@@ -1,7 +1,7 @@
 # Ladder
 Ladder is a simple Sass mixin &amp; utility library.
 
-## Installation
+## Installation & Usage
 
 **Notice: This library is under active development and not ready for production yet.**
 
@@ -10,6 +10,7 @@ Ladder is a simple Sass mixin &amp; utility library.
 ```
 npm install ladder-sass
 ```
+
 2.Import base file into your main .scss stylesheet.
 ```
 @import 'ladder-sass/ladder'
