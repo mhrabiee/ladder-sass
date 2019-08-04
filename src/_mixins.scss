@@ -11,14 +11,23 @@ Typography
 */
 
 // Font Face
-@mixin font-face($font-name, $font-path, $font-weight: normal) {
+@mixin font-face($font-family-name, $font-file-name, $font-weight: normal) {
   @font-face {
-    font-family: quote($font-name);
+    font-family: quote($font-family-name);
     font-weight: $font-weight;
-    src: url($font-path + $font-name + '.eot');
-    src: url($font-path + $font-name + '.eot?#iefix')  format('embedded-opentype'),
-    url($font-path + $font-name + '.woff') format('woff'),
-    url($font-path + $font-name + '.ttf')  format('truetype'),
-    url($font-path + $font-name + '.svg##{$font-name}')  format('svg');
+    src: url($font-file-name + '.eot');
+    src: url($font-file-name + '.eot?#iefix') format('embedded-opentype'),
+    url($font-file-name + '.woff') format('woff'),
+    url($font-file-name + '.woff2') format('woff2'),
+    url($font-file-name + '.ttf') format('truetype'),
+    url($font-file-name + '.svg##{$font-family-name}') format('svg');
   }
+}
+
+// Variable Fonts
+@mixin font-face-variable($font-family-name, $font-file-name) {
+  font-family: quote($font-family-name);
+  src: url($font-file-name) format("woff-variations"),
+  url($font-file-name) format("woff");
+  font-display: fallback;
 }
