@@ -14,8 +14,8 @@ Typography
 @mixin font-face-variable($font-family-name, $font-file-name) {
   @font-face {
     font-family: quote($font-family-name);
-    src: url($font-file-name) format("woff-variations"),
-    url($font-file-name) format("woff");
+    src: url($font-file-name + '.woff') format("woff-variations"),
+    url($font-file-name + '.woff') format("woff");
     font-display: fallback;
   }
 }
