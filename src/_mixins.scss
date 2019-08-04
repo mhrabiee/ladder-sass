@@ -33,3 +33,16 @@ Typography
     url($font-file-name + '.svg##{$font-family-name}') format('svg');
   }
 }
+
+
+/*
+--------------------------------------------------
+Directions
+--------------------------------------------------
+*/
+
+@mixin html-direction($direction: ltr) {
+  html[dir=#{$direction}] {
+    @content
+  }
+}
