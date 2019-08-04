@@ -9,3 +9,16 @@ Mixins
 Typography
 --------------------------------------------------
 */
+
+// Font Face
+@mixin font-face($font-name, $font-path, $font-weight: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    font-weight: $font-weight;
+    src: url($font-path + '.eot');
+    src: url($font-path + '.eot?#iefix')  format('embedded-opentype'),
+    url($font-path + '.woff') format('woff'),
+    url($font-path + '.ttf')  format('truetype'),
+    url($font-path + '.svg##{$font-name}')  format('svg');
+  }
+}
