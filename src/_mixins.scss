@@ -15,10 +15,10 @@ Typography
   @font-face {
     font-family: quote($font-name);
     font-weight: $font-weight;
-    src: url($font-path + '.eot');
-    src: url($font-path + '.eot?#iefix')  format('embedded-opentype'),
-    url($font-path + '.woff') format('woff'),
-    url($font-path + '.ttf')  format('truetype'),
-    url($font-path + '.svg##{$font-name}')  format('svg');
+    src: url($font-path + $font-name + '.eot');
+    src: url($font-path + $font-name + '.eot?#iefix')  format('embedded-opentype'),
+    url($font-path + $font-name + '.woff') format('woff'),
+    url($font-path + $font-name + '.ttf')  format('truetype'),
+    url($font-path + $font-name + '.svg##{$font-name}')  format('svg');
   }
 }
