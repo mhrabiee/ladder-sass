@@ -33,3 +33,13 @@ Directions
 Typography
 --------------------------------------------------
 */
+
+.text-dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.text-dashed {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
