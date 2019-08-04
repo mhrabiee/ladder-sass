@@ -10,6 +10,16 @@ Typography
 --------------------------------------------------
 */
 
+// Variable Fonts
+@mixin font-face-variable($font-family-name, $font-file-name) {
+  @font-face {
+    font-family: quote($font-family-name);
+    src: url($font-file-name) format("woff-variations"),
+    url($font-file-name) format("woff");
+    font-display: fallback;
+  }
+}
+
 // Font Face
 @mixin font-face($font-family-name, $font-file-name, $font-weight: normal) {
   @font-face {
@@ -22,12 +32,4 @@ Typography
     url($font-file-name + '.ttf') format('truetype'),
     url($font-file-name + '.svg##{$font-family-name}') format('svg');
   }
-}
-
-// Variable Fonts
-@mixin font-face-variable($font-family-name, $font-file-name) {
-  font-family: quote($font-family-name);
-  src: url($font-file-name) format("woff-variations"),
-  url($font-file-name) format("woff");
-  font-display: fallback;
 }
