@@ -53,6 +53,22 @@ Margin
 --------------------------------------------------
 */
 
+@mixin margin-x($right, $left: null) {
+  @if not($left) {
+    $left: $right;
+  }
+  margin-right: $right;
+  margin-left: $left;
+}
+
+@mixin margin-y($top, $bottom) {
+  @if not($bottom) {
+    $bottom: $top;
+  }
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
 /*
 --------------------------------------------------
 Padding
