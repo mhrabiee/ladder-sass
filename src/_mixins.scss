@@ -74,3 +74,19 @@ Margin
 Padding
 --------------------------------------------------
 */
+
+@mixin padding-x($right, $left: null) {
+  @if not($left) {
+    $left: $right;
+  }
+  padding-right: $right;
+  padding-left: $left;
+}
+
+@mixin padding-y($top, $bottom) {
+  @if not($bottom) {
+    $bottom: $top;
+  }
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
